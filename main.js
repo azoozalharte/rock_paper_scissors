@@ -9,7 +9,8 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         return 'Tie'
-    } else if (playerSelection == 'rock' && computerSelection == 'scissors' || playerSelection == 'paper' && computerSelection == 'rock' || playerSelection == 'scissors' && computerSelection == 'paper') {
+    } else if (playerSelection == 'rock' && computerSelection == 'scissors' || playerSelection == 'paper' && computerSelection == 'rock' || 
+    playerSelection == 'scissors' && computerSelection == 'paper') {
         return `You win! ${playerSelection} beats ${computerSelection}` 
     }else {
         return `You lose! ${computerSelection} beats ${playerSelection}` 
@@ -17,12 +18,13 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    for (var i = 1; i < 5; i++) {
-        let userInput = prompt('Pick one Rock , Paper or Scissors').toLowerCase();
-        let computerChoice = computerPlay()
+    let computerChoice = computerPlay()
 
-        console.log(playRound(userInput, computerChoice))
-    }
+    console.log(playRound(userInput, computerChoice))
 }
 
-game()
+let i = 0
+while (i < 3) {
+    game()
+    i++
+}
