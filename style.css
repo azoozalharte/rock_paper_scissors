@@ -20,8 +20,22 @@ h1 {
 .dash-bord h3 span{
     color: #FFC900;
 }
+.selected {
+    margin-top: 10px;
+    font-size: 12px
+}
+.selected h3{
+    
+    display: inline;
+    color: white;
+    margin-left: 20px;
+}
 
-.card-continer button {
+.selected h3 span{
+    color: #FFC900;
+}
+
+.buttons button {
     background-color: #35858B;
     border-radius: 40px;
     height: 100px;
@@ -33,11 +47,28 @@ h1 {
     margin-top: 25px;
 }
 
-.card-continer button:active {
+.buttons .active:active {
     border: 5px solid #FFC900;
 }
 
 
-.card-continer button img {
+
+.buttons button img {
     height: 60px;
+}
+
+h4 {
+    color: white
+}
+
+
+#new_game {
+    font-weight: bold;
+    color:#072227;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #FFC900;
+    border-radius: 40px;
 }
